@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Dry Foods</title>
+    <link rel="stylesheet" href="./css/shop.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* From Uiverse.io by ferlagher */
+      button {
+        position: relative;
+        font-size: 1.2em;
+        padding: 0.7em 1.4em;
+        background-color: #bf0426;
+        text-decoration: none;
+        border: none;
+        border-radius: 0.5em;
+        color: #dedede;
+        box-shadow: 0.1em 0.4em 0.5em rgba(0, 0, 0, 0.3);
+      }
+
+      button::before {
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 0;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(33, 33, 33, 1) 0%,
+          rgba(33, 33, 33, 1) 50%,
+          rgba(150, 4, 31, 1) 50%,
+          rgba(191, 4, 38, 1) 60%
+        );
+        border-radius: 0 0 0.5em 0;
+        box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+        transition: 0.3s;
+      }
+
+      button:hover::before {
+        width: 1.1em;
+        height: 1.1em;
+      }
+
+      button:active {
+        box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.3);
+        transform: translate(0.1em, 0.1em);
+      }
+      .copyright {
+  background: #0E9BAF;
+  color: #fff;
+}
+.top {
+  background-color: #0E9BAF;
+  color: white;
+}
+    </style>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- banner Section -->
+    <header class="background box py-5 text-center" style="margin-top: 135px">
+      <div class="container">
+        <h1 class="display-4">Shop Dry Foods</h1>
+        <p class="lead">
+          Explore our selection of premium dry foods and snacks.
+        </p>
+      </div>
+    </header>
+
+    <!-- Product Grid Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+           <!-- Product Item 1 -->
+           <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card box h-100">
+              <img
+                src="./css/images/akhrot.jpg"
+                class="card-img-top"
+                alt="Almonds"
+                width="200px"
+                height="300px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Walnuts inshell</h5>
+                <p class="card-text">600/- kg</p>
+                <a href="#" class="btn">
+                  <button>
+                    <b>Add to Cart</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Product Item 5 -->
+         
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+              <img
+                src="./css/images/pdp_1_6.png"
+                class="card-img-top"
+                alt="Almonds"
+                width="200px"
+                height="300px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Pistachio</h5>
+                <p class="card-text">1099/- per kg</p>
+                <a href="#" class="btn">
+                  
+                  <button>
+                    <b>Add to Cart</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Item 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+              <img
+                src="./css/images/product-2.jpg"
+                class="card-img-top"
+                alt="Cashews"
+                width="200px"
+                height="300px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Date Crown Fard Dates</h5>
+                <p class="card-text">  199/- 500gm</p>
+              
+                <a href="#" class="btn">
+                  <button>
+                    <b>Add to Cart</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Item 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+              <img
+                src="./css/images/product-4.jpg"
+                class="card-img-top"
+                alt="Raisins"
+                width="200px"
+                height="300px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Elaichi</h5>
+                <p class="card-text"> 360/- 100gm</p>
+                <a href="#" class="btn">
+                  <button>
+                    <b>Add to Cart</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+<!-- Product Item 1 -->
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <div class="card h-100">
+    <img
+      src="./css/images/product.jpg"
+      class="card-img-top"
+      alt="Almonds"
+      width="200px"
+      height="300px"
+    />
+    <div class="card-body text-center">
+      <h5 class="card-title">Honey dryfruits</h5>
+      <p class="card-text">640/- 1KG</p>
+      <a href="#" class="btn">
+        <button>
+          <b>Add to Cart</b>
+        </button></a
+      >
+    </div>
+  </div>
+</div>
+<!-- Product Item 1 -->
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <div class="card h-100">
+    <img
+      src="./css/images/istockphoto-1038303888-612x612.jpg"
+      class="card-img-top"
+      alt="Almonds"
+      width="200px"
+      height="300px"
+    />
+    <div class="card-body text-center">
+      <h5 class="card-title">Anjeer</h5>
+      <p class="card-text">699 / 500gm</p>
+      <a href="#" class="btn">
+        <button>
+          <b>Add to Cart</b>
+        </button></a
+      >
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <div class="card h-100">
+    <img
+      src="./css/images/fun sweet.png.jpg"
+      class="card-img-top"
+      alt="Almonds"
+      width="200px"
+      height="300px"
+    />
+    <div class="card-body text-center">
+      <h5 class="card-title">Fun Sweet</h5>
+      <p class="card-text">699 /- 1kg</p>
+      <a href="#" class="btn">
+        <button>
+          <b>Add to Cart</b>
+        </button></a
+      >
+    </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <div class="card h-100">
+    <img
+      src="./css/images/dryfurt2.png.jpg"
+      class="card-img-top"
+      alt="Almonds"
+      width="200px"
+      height="300px"
+    />
+    <div class="card-body text-center">
+      <h5 class="card-title">Walnut Withoutshell</h5>
+      <p class="card-text">1200 / kg</p>
+      <a href="#" class="btn">
+        <button>
+          <b>Add to Cart</b>
+        </button></a
+      >
+    </div>
+  </div>
+</div>
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <div class="card h-100">
+    <img
+      src="./css/images/sunflow.jpg"
+      class="card-img-top"
+      alt="Almonds"
+      width="200px"
+      height="300px"
+    />
+    <div class="card-body text-center">
+      <h5 class="card-title">Sunflower Seeds</h5>
+      <p class="card-text">87/- 250gm</p>
+      <a href="#" class="btn">
+        <button>
+          <b>Add to Cart</b>
+        </button></a
+      >
+    </div>
+  </div>
+</div>
+  
+<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+  <div class="card h-100">
+    <img
+      src="./css/images/pumpkin-seeds[1].jpg"
+      class="card-img-top"
+      alt="Almonds"
+      width="200px"
+      height="300px"
+    />
+    <div class="card-body text-center">
+      <h5 class="card-title">Pumpkin-Seeds</h5>
+      <p class="card-text">150/- 250g</p>
+      <a href="#" class="btn">
+        <button>
+          <b>Add to Cart</b>
+        </button></a
+      >
+    </div>
+  </div>
+</div>
+ 
+          <!-- Product Item 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+              <img
+                src="./css/images/product-11.jpg"
+                class="card-img-top"
+                alt="Almonds"
+                width="200px"
+                height="300px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Raisinss</h5>
+                <p class="card-text">75/- 250gm</p>
+                <a href="#" class="btn">
+                  <button>
+                    <b>Add to Cart</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+  <!-- Product Item 1 -->
+  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+    <div class="card h-100">
+      <img
+        src="./css/images/dried-fruits-nuts.png"
+        class="card-img-top"
+        alt="Almonds"
+        width="200px"
+        height="300px"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title">Roasted Mix Dry Fruits</h5>
+        <p class="card-text">838/- 1KG</p>
+        <a href="#" class="btn">
+          <button>
+            <b>Add to Cart</b>
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- Product Item 1 -->
+  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+    <div class="card h-100">
+      <img
+        src="./css/images/dryfrut.jpg"
+        class="card-img-top"
+        alt="Almonds"
+        width="200px"
+        height="300px"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title">Flax seeds</h5>
+        <p class="card-text">45/- 250gm</p>
+        <a href="#" class="btn">
+          <button>
+            <b>Add to Cart</b>
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
+  <!--pro-->
+  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+    <div class="card h-100">
+      <img
+        src="./css/images/dryfrut3.png.jpg"
+        class="card-img-top"
+        alt="Almonds"
+        width="200px"
+        height="300px"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title">Premium Almonds</h5>
+        <p class="card-text">748/- 1kg</p>
+        <a href="#" class="btn">
+          <button>
+            <b>Add to Cart</b>
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+    <div class="card h-100">
+      <img
+        src="./css/images/dryfurts15.jpg"
+        class="card-img-top"
+        alt="Almonds"
+        width="200px"
+        height="300px"
+      />
+      <div class="card-body text-center">
+        <h5 class="card-title">Cashew Biscuit</h5>
+        <p class="card-text"> 114/- 200gm</p>
+        <a href="#" class="btn">
+          <button>
+            <b>Add to Cart</b>
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
+    <!-- Product Item 4 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img
+          src="./css/images/BSK1.jpg"
+          class="card-img-top"
+          alt="Pistachios"
+          width="200px"
+          height="300px"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Pista Biscuit</h5>
+          <p class="card-text">120/- 200gm</p>
+          <a href="#" class="btn">
+            <button>
+              <b>Add to Cart</b>
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+      <!-- Product Item 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="./css/images/BSK2.jpg"
+            class="card-img-top"
+            alt="Pistachios"
+            width="200px"
+            height="300px"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Chocolate Cashew Biscuit</h5>
+            <p class="card-text"> 127/- 200gm</p>
+            <a href="#" class="btn">
+              <button>
+                <b>Add to Cart</b>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Product Item 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="./css/images/BSK3.jpg"
+            class="card-img-top"
+            alt="Pistachios"
+            width="200px"
+            height="300px"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Osmania Biscuit</h5>
+            <p class="card-text">   87/- 200gm</p>
+            <a href="#" class="btn">
+              <button>
+                <b>Add to Cart</b>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Product Item 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="./css/images/BSK4.jpg"
+            class="card-img-top"
+            alt="Pistachios"
+            width="200px"
+            height="300px"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Almond Butter Biscuit</h5>
+            <p class="card-text"> 33/- 75gm</p>
+            <a href="#" class="btn">
+              <button>
+                <b>Add to Cart</b>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Product Item 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="./css/images/BSK5.jpg"
+            class="card-img-top"
+            alt="Pistachios"
+            width="200px"
+            height="300px"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Fruits Biscuit</h5>
+            <p class="card-text">  105/- 200gm</p>
+            <a href="#" class="btn">
+              <button>
+                <b>Add to Cart</b>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100">
+          <img
+            src="./css/images/dryfurts6.jpg"
+            class="card-img-top"
+            alt="Almonds"
+            width="200px"
+            height="300px"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">kimia dattes</h5>
+            <p class="card-text">150/500gm</p>
+            <a href="#" class="btn">
+              <button>
+                <b>Add to Cart</b>
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+
+          <!-- Product Item 4 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+              <img
+                src="./css/images/gulf.png"
+                class="card-img-top"
+                alt="Pistachios"
+                width="200px"
+                height="300px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Gulf Zahidi Dates</h5>
+                <p class="card-text"> 87/- 500gm</p>
+                <a href="#" class="btn">
+                  <button>
+                    <b>Add to Cart</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+              <img
+                src="./css/images/Chia-Seeds.jpg"
+                class="card-img-top"
+                alt="Almonds"
+                width="200px"
+                height="300px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Chia Seeds</h5>
+                <p class="card-text">87/- 250gm</p>
+                <a href="#" class="btn">
+                  <button>
+                    <b>Add to Cart</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Product Item 1 -->
+        
+         
+         
+       
+          <!-- Product Item 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100">
+              <img
+                src="./css/images/dried-dates.webp"
+                class="card-img-top"
+                alt="Almonds"
+                width="200px"
+                height="300px"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Dried dates</h5>
+                <p class="card-text">60/- 250gm</p>
+                <a href="#" class="btn">
+                  <button>
+                    <b>Add to Cart</b>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more products as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer start -->
+    <div id="footer"></div>
+
+    <div class="copyright text-center py-2">
+      <p class="mb-0">&copy; Copyright 2024 Jyoti Raisinss. All Right Reserved || Designed and Maintained by BTPL.</p>
+
+    </div>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

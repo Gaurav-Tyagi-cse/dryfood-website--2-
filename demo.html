@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom Animation</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .image-container {
+        overflow: hidden;
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.2);
+    }
+</style>
+
+<body>
+    <div class="image-container">
+        <img src="css/images/Almonds.png" alt="Zoom Image">
+    </div>
+</body>
+
+</html>
+
+<!---
+    <h1 class="text-center">Featured Collection</h1>
+    <div class="Product  d-flex">
+        <img src="./css/images/Products-Raisins_1.png" class="img-fluid zoom-img " width="300px">
+        <img src="./css/images/Products-Pistachio_1.png" class="img-fluid zoom-img" width="200px">
+        <img src="./css/images/Products-Cashew_1.webp" class="img-fluid zoom-img" width="200px">
+        <img src="./css/images/Products-Anjeer_1.png" class="img-fluid zoom-img" width="200px">
+        <img src="./css/images/Products-Almonds_1.png" class="img-fluid zoom-img" width="200px">
+        <img src="./css/images/Products-Cashew_1.webp" class="img-fluid zoom-img" width="200px">
+    </div>
+
+    </div> -->
+<!---
+    <div class="dry-sec">
+        <img src="./css/images/dryfood.png" class="img-fluid">
+    </div>
+
+                <div class="dry-food">
+                  
+                  <h3 class="text-center">A Gift Of Health</h3>  
+                    <div class="nruts" style="margin-top: 30px;">
+                
+                        <img src="./css/images/TES0168-1536x1536-1.jpg" class=" img img-fluid ">
+            
+                        
+                        <img src="./css/images/TES0195-1536x1536-1-1.jpg" class="  img-fluid">
+                        <img src="./css/images/TES0256-2-1536x1536-1.jpg" class=" img-fluid">
+                        <img src="./css/images/TES0273-1536x1536-1.jpg" class="img-fluid ">
+                        <img src="./css/images/TES0160-300x300.jpg" class="img-fluid">
+                        <img src="./css/images/TES0111-300x300.jpg" class="img-fluid">
+
+                    </div>
+                </div> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Dry Foods</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Hover effect on Add to Cart button */
+        .btn-primary {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Change color and scale on hover */
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Animation for click */
+        .btn-primary:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+
+        /* Optional custom styles for card */
+        .card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-4">Shop Dry Foods</h1>
+            <p class="lead">Explore our selection of premium dry foods and snacks.</p>
+        </div>
+    </header>
+
+    <!-- Product Grid Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Product Item 1 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/almonds.jpg" class="card-img-top" alt="Almonds">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Premium Almonds</h5>
+                            <p class="card-text">15.99 / 500g</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 2 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/cashews.jpg" class="card-img-top" alt="Cashews">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Organic Cashews</h5>
+                            <p class="card-text">12.99 / 500g</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/raisins.jpg" class="card-img-top" alt="Raisins">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Golden Raisins</h5>
+                            <p class="card-text">9.99 / 500g</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Item 4 -->
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/pistachios.jpg" class="card-img-top" alt="Pistachios">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Roasted Pistachios</h5>
+                            <p class="card-text">17.99 / 500g</p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more products as needed -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-light py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Dry Foods Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

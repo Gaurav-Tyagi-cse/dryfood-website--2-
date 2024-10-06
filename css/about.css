@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-item a {
+  font-weight: 900;
+}
+
+.top {
+  background-color: #772033;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menues {
+  display: flex;
+  width: 35%;
+}
+
+.nav-item {
+  margin-right: 0px;
+  padding: 0 10px;
+
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.logo {
+  width: 65%;
+}
+
+.display-4 {
+
+  font-weight: 700;
+}
+
+.lead {
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.background {
+  background-image: url("./images/aboutbanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.background h1,
+.background p {
+  font-weight: 500;
+}
+
+.txt p h2 {
+  padding-top: 20px;
+}
+
+.img1 {
+  border-radius: 10px;
+  height: 400px;
+
+  box-shadow: 0 4px 8px hsla(0, 5%, 93%, 0.879), 0 6px 20px #a996c130;
+}
+
+/*
+.boder{
+  content: '';
+  position: absolute;
+  width: calc(20% + 40px);
+  height: calc(50% + 180px);
+  bottom: -300px;
+  left: 200px;
+  background: transparent;
+  z-index: 0;
+  border: 44px solid #772033;
+
+}*/
+.img2 {
+
+  width: 440px;
+  height: 800px;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.img2 {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(237, 235, 235, 0.879), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+/*
+  .txt{
+    box-shadow:0 4px 8px rgba(237, 235, 235, 0.879), 0 6px 20px rgba(0, 0, 0, 0.19) ;
+  }*/
+/* footer start */
+.footer {
+  background-color: black;
+  color: #fff;
+}
+
+.footer h5 {
+  color: rgb(157, 104, 43);
+  font-weight: 600;
+}
+
+.copyright {
+  background: rgb(157, 104, 43);
+  color: #fff;
+}
+
+/* footer end */
+
+
+
+/*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19) ;*/
+
+
+.card {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    display: block;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .nav-menues {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .img2 {
+    margin-left: 0;
+    /* Removes the large left margin on smaller screens */
+    margin-top: 0;
+    /* Adjusts the top margin for responsiveness */
+    width: 100%;
+  }
+}

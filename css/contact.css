@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-item a {
+  font-weight: 900;
+}
+
+.top {
+  background-color: #772033;
+  color: white;
+  padding: 10px;
+}
+
+.logo {
+  width: 65%;
+}
+
+.background {
+  background-image: url("./images/dry1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.background h1,
+.background p {
+  font-weight: 500;
+}
+
+.display-4 {
+  font-weight: 700;
+}
+
+.lead {
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: block;
+}
+
+.nav-menues {
+  display: flex;
+  width: 35%;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+/* Animation for input fields */
+.animated-input {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Animation for button */
+.animated-btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.animated-btn:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+
+/* Adding subtle animation to the form elements on hover */
+.form-group {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .form-group:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+} */
+
+
+/* footer start */
+.footer {
+  background-color: black;
+  color: #fff;
+}
+
+.footer h5 {
+  color: rgb(157, 104, 43);
+  font-weight: 600;
+}
+
+.copyright {
+  background: rgb(157, 104, 43);
+  color: #fff;
+}
+
+iframe {
+  width: 100%;
+  height: 340px;
+
+}
+
+.social-links a {
+  border: 0;
+}
+
+.first-col i {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+/* footer end */
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    display: block;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .nav-menues {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
